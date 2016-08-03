@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="iconics-1.0.2">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.mikepenz/iconics/1.0.2/res" />
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.mikepenz/iconics/1.0.2/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.mikepenz/iconics/1.0.2/9096333437af736861868ed9ad6c5787d674f5a1/iconics-1.0.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,44 @@
+apply plugin: 'com.android.application'
+apply plugin: 'android-apt'
+
+repositories {
+    jcenter()
+}
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion '22.0.1'
+    defaultConfig {
+        applicationId "app.toroshu.tomato"
+        minSdkVersion 15
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            shrinkResources true
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            zipAlignEnabled true
+        }
+    }
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.google.android.gms:play-services:8.3.0'
+    compile 'com.andreabaccega:android-form-edittext:1.1.0@aar'
+    compile 'com.github.afollestad.material-dialogs:core:0.8.5.3@aar'
+    compile 'com.elmargomez.typer:typerlib:1.0.0'
+    compile('com.mikepenz:materialdrawer:3.0.7@aar') {
+        transitive = true
+    }
+    compile 'de.psdev.licensesdialog:licensesdialog:1.7.0'
+    compile 'com.github.navasmdc:MaterialDesign:1.5@aar'
+    compile 'com.android.support:recyclerview-v7:22.0.0'
+    compile 'com.android.support:appcompat-v7:22.0.0'
+    compile 'com.jakewharton:butterknife:8.2.1'
+    apt 'com.jakewharton:butterknife-compiler:8.2.1'
+}
